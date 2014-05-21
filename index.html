@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS Bin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css">
+<script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+<script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+<script src="jquery.mobile.themetemplater.js"></script>
+<script>
+	$(function(){
+		$( ".temp" ).themetemplater();
+	})
+</script>
+<style>
+	label{
+		clear: both;
+	}
+</style>
+<body>
+	<div data-role="page">
+		<div class="temp ui-content">
+			<textarea class="ui-theme-template" name="Datepicker">
+/*!
+* jQuery Mobile Datepicker Wrapper
+http://uglymongrel.com.com
+*
+* Copyright Alexander Schmitz and other contributors
+* Released under the MIT license.
+* http://uglymongrel.com.org/license
+*
+*/
+
+/* Globals */
+.ui-datepicker,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+	/* ui-shadow */
+	-webkit-box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+	-moz-box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+	box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+}
+/* Swatches */
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+html .ui-overlay-a .ui-datepicker td span,
+html .ui-overlay-a .ui-datepicker a,
+html .ui-body-a .ui-datepicker td span,
+html .ui-body-a .ui-datepicker a,
+.ui-page-theme-a .ui-datepicker td span,
+.ui-page-theme-a .ui-datepicker a {
+	/* ui-btn-a */
+	background-color: /*{a-bup-background-color}*/;
+	border-color: /*{a-bup-border}*/;
+	color: /*{a-bup-color}*/;
+	text-shadow: /*{a-bup-shadow-x}*/ /*{a-bup-shadow-y}*/ /*{a-bup-shadow-radius}*/ /*{a-bup-shadow-color}*/;
+}
+html body .ui-datepicker .ui-state-highlight {
+	/* ui-btn-down */
+	background-color: /*{a-bdown-background-color}*/;
+	border-color: /*{a-bdown-border}*/;
+	color: /*{a-bdown-color}*/;
+	text-shadow: /*{a-bdown-shadow-x}*/ /*{a-bdown-shadow-y}*/ /*{a-bdown-shadow-radius}*/ /*{a-bdown-shadow-color}*/;
+}
+html body .ui-datepicker .ui-state-active {
+	/* ui-btn-active */
+	background-color: /*{a-active-background-color}*/;
+	border-color: /*{a-active-border}*/;
+	color: /*{a-active-color}*/;
+	text-shadow: /*{a-active-shadow-x}*/ /*{a-active-shadow-y}*/ /*{a-active-shadow-radius}*/ /*{a-active-shadow-color}*/;
+}
+.ui-datepicker td,
+.ui-datepicker .ui-datepicker-header {
+	/* ui-body-a */
+	border-color: /*{a-body-border}*/;
+	background-color: /*{a-body-background-color}*/;
+	color: /*{a-body-color}*/;
+	text-shadow: /*{a-body-shadow-x}*/ /*{a-body-shadow-y}*/ /*{a-body-shadow-radius}*/ /*{a-body-shadow-color}*/;
+}
+
+.ui-datepicker th {
+	/* ui-bar-a */
+	background-color: /*{a-bar-background-color}*/;
+	border-color: /*{a-bar-border}*/;
+	color: /*{a-bar-color}*/;
+	text-shadow: /*{a-bar-shadow-x}*/ /*{a-bar-shadow-y}*/ /*{a-bar-shadow-radius}*/ /*{a-bar-shadow-color}*/;
+	font-weight: bold;
+}
+			</textarea>
+			<textarea class="ui-theme-template" name='spinner'>
+/*!
+* jQuery Mobile UI Spinner
+http://uglymongrel.com
+*
+* Copyright Alexander Schmitz and other contributors
+* Released under the MIT license.
+* http://uglymongrel.com.org/license
+*
+*/
+
+/* Globals */
+.ui-spinner .ui-btn {
+	width: auto;
+	display: inline-block;
+	float: right;
+	width: 2em;
+	height: 2em;
+	padding: 0;
+}
+.ui-spinner .ui-btn a{
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: inherit;
+}
+.ui-spinner .ui-btn a .ui-icon {
+	margin-top:.5em;
+	display: block;
+	color: black;
+}
+.ui-spinner{
+	position: relative;
+	display: block;
+}
+.ui-spinner .ui-btn {
+	position:absolute;
+	top: -.45em;
+	right: 2.3em;
+}
+.ui-spinner .ui-btn:last-child{
+	right:.1em
+}
+/* Swatches */
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+			</textarea>
+			<textarea class="ui-theme-template" name="menu">
+/*!
+* jQuery Mobile UI Menu
+http://uglymongrel.com
+*
+* Copyright Alexander Schmitz and other contributors
+* Released under the MIT license.
+* http://uglymongrel.com.org/license
+*
+*/
+
+/* Globals */
+.ui-menu li>a:after {
+	right: .5625em;
+	top: 50%;
+	margin-top: -11px;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 22px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	height: 22px;
+	background-image:url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%223.404%2C2.051%208.354%2C7%203.404%2C11.95%205.525%2C14.07%2012.596%2C7%205.525%2C-0.071%20%22%2F%3E%3C%2Fsvg%3E");
+
+}
+.ui-content .ui-menu {
+	/* ui-listview */
+	margin: 1em 0;
+	padding: 0;
+	list-style: none;
+}
+ul.ui-menu ul.ui-menu {
+	margin: 1em;
+}
+.ui-menu.ui-menu-item{
+	/* ui-listview li */
+	display: block;
+	position: relative;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ui-menu li>a,
+.ui-menu li>a:visited{
+	/* structure */
+	text-decoration: none;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	margin: 0;
+	display: block;
+	position: relative;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: .7em 1em;
+}
+.ui-menu li>a.ui-corner-all {
+	border-radius: inherit;
+	border: inherit;
+}
+/* Swatches */
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+.ui-menu li>a,
+.ui-menu li>a:visited{
+	background-color: /*{a-bup-background-color}*/;
+	border-color: /*{a-bup-border}*/;
+	color: /*{a-bup-color}*/;
+	text-shadow: /*{a-bup-shadow-x}*/ /*{a-bup-shadow-y}*/ /*{a-bup-shadow-radius}*/ /*{a-bup-shadow-color}*/;
+}
+.ui-menu li>a:after{
+	background-color: /*{global-icon-disc}*/;
+	}
+.ui-content .ui-menu {
+	/* ui-shadow */
+	-webkit-box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+	-moz-box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+	box-shadow: /*{global-box-shadow-size}*/ /*{global-box-shadow-color}*/;
+}
+			</textarea>
+		</div>
+	</div>
+</body>
+</html>
